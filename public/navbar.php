@@ -1,7 +1,10 @@
 <?php
 $nav_links = ["Home" => "home", "About" => "about", "Weather"=>"weather", "Contact" => "contact", "Sign In" => "login"];
 $logged_in = true;
-$nav_links_iflogged = ["Farming Advisory" => "farming_advisory","Dashboard" => "dashboard" ,"Logout" => "logout"]
+$nav_links_iflogged = ["Farming Advisory" => "farming_advisory","Dashboard" => "dashboard" ,"Logout" => "logout"];
+$isLoggedIn = isset($_SESSION["loggedIn"])? $_SESSION["loggedIn"] : null;
+
+
 ?>
 <nav class="bg-inhert text-inhert text-lg">
     <div class="flex items-center justify-between p-4">
@@ -27,6 +30,8 @@ $nav_links_iflogged = ["Farming Advisory" => "farming_advisory","Dashboard" => "
                     
                 </li>
                 ";
+
+                
             }
 
             ?>

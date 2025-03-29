@@ -1,4 +1,6 @@
 <?php
+// include_once "./header.php";
+// include_once "../database/db_connect.php";
 function render_blocks_ntimes($html_block, $n)
 {
     for ($i = 0; $i < $n; $i++) {
@@ -75,3 +77,14 @@ function go_to_location($location)
 {
     header("location: $location", true, 301);
 }
+
+// function isLoggedIn_display($isLoggedin,$user_id,$conn){
+//     if($isLoggedin) "<div></div>";
+//     $query = "select name,email,role from users where user_id='$user_id';";
+//     $result = mysqli_query($conn, $query);
+//     if(!$result) exit;
+//     $rows = mysqli_fetch_all($result);
+//     var_dump($rows);
+
+// }
+// isLoggedIn_display($true,16,$conn);
